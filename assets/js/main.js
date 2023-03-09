@@ -69,4 +69,60 @@ document.write(`${text2} ${text3} ${text1.replace("is", "are").slice(0, 17).conc
 document.write(`${text2} ${text3} ${text1.replace("is", "are").replace("codingschool", "gym")} ${text3} ${text4}` + '<br>');
 document.write(`${text1.replace("Sam", text2).slice(0, 17).concat(text1.slice(22))} ${text3} ${text4}`);
 
+//lev1_1: Ternary Operator
+function checkAge() {
+    let age = document.querySelector("input[type=number]").value;
+    age > 18 ? document.querySelector(".ageResult").innerHTML = "Du darfst rein!" : document.querySelector(".ageResult").innerHTML = "Du bleibst besser draußen!";
+    console.log(age);
+}
 
+//lev1_2: Ternary Operator
+function checkPw() {
+    let pw = document.querySelector("input[type=password]").value;
+    pw.length > 7 ? document.querySelector(".pwResult").innerHTML = '<span style="color: green;">Welcome 2 Da (Concred-)Jungle!</span>' : document.querySelector(".pwResult").innerHTML = '<span style="color: red;">Your Pw Is 2 Short!</span>';
+}
+
+//lev2_5: Switch Break
+function check() {
+    let bl = document.querySelector("input[type=text]").value;
+    console.log(bl);
+    switch (bl) {
+        case "Berlin":
+            document.querySelector("#bundeslandInfoErgebnis").innerHTML = "Berlin hat 3,520 Mio Einwohner und Berlin ist die Hauptstadt";
+            break;
+        case "Bremen":
+            document.querySelector("#bundeslandInfoErgebnis").innerHTML = "Bremen hat 0,671 Mio Einwohner und Bremen ist die Hauptstadt";
+            break;
+        case "Hessen":
+            document.querySelector("#bundeslandInfoErgebnis").innerHTML = "Hessen hat 6,176 Mio Einwohner und Wiesbaden ist die Hauptstadt";
+            break;
+        default: document.querySelector("#bundeslandInfoErgebnis").innerHTML = "Existiert gar nicht ODER ist noch nicht eingepflegt. Es gibt nur Berlin, Bremen und Hessen.";
+            break;
+    }
+}
+
+//lev2_7: Switch Break DHL
+function showtxt() {
+    let optionValue = document.querySelector("select[name=mylist]").value
+    console.log(optionValue);
+
+    switch (optionValue) {
+        case "0":
+            document.querySelector("#masse").innerHTML = "<b>Brief und Postkarte</b> <br>L: 10 - 23,5 cm B: 7 - 12,5 cm H: bis 1 cm";
+            break;
+        case "1":
+            document.querySelector("#masse").innerHTML = "<b>DHL Paket 2 kg</b> <br> bis 60 x 30 x 15 cm";
+            break;
+        case "2":
+            document.querySelector("#masse").innerHTML = "<b>DHL Paket 5 kg</b> <br> bis 120 x 60 x 60 cm";
+            break;
+        case "3":
+            document.querySelector("#masse").innerHTML = "<b>DHL Paket 10 kg</b> <br> bis 120 x 60 x 60 cm";
+            break;
+        case "4":
+            document.querySelector("#masse").innerHTML = "<b>Extra große Größe</b>";
+            break;
+        default:
+            break;
+    }
+}
