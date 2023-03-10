@@ -103,7 +103,7 @@ function check() {
 
 //lev2_7: Switch Break DHL
 function showtxt() {
-    let optionValue = document.querySelector("select[name=mylist]").value
+    let optionValue = document.querySelector("select[name=mylist]").value;
     console.log(optionValue);
 
     switch (optionValue) {
@@ -119,10 +119,8 @@ function showtxt() {
         case "3":
             document.querySelector("#masse").innerHTML = "<b>DHL Paket 10 kg</b> <br> bis 120 x 60 x 60 cm";
             break;
-        case "4":
-            document.querySelector("#masse").innerHTML = "<b>Extra große Größe</b>";
-            break;
         default:
+            document.querySelector("#masse").innerHTML = "<b>Extra große Größe</b>";
             break;
     }
 }
