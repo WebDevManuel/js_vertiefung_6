@@ -124,3 +124,148 @@ function showtxt() {
             break;
     }
 }
+//lvl1_1: Arrays
+let person = ["Bruce", "Wayne", "Superreich"];
+let friends = ["Farid", "Christian", "Sergio"];
+let favFood = ["Burger", "Sushi", "Käse"];
+console.log(person);
+console.log(friends);
+console.log(favFood);
+
+//lvl_1_2: Arrays Index
+console.log(person[0]);
+console.log(person[1]);
+console.log(person[2]);
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends[2]);
+console.log(favFood[1]);
+console.log(favFood[2]);
+console.log(favFood[0]);
+
+//lvl_1_3: Arrays length
+console.log(person.length);
+console.log(friends.length);
+console.log(favFood.length);
+
+//lvl_1_4: Arrays push()
+// !!!The push() method adds new items to the end of an array, 
+//    changes the length of the array 
+//    and returns the new length!!!
+console.log("person[] - BEFOR .push()");
+console.log(person);
+console.log(person.length);
+console.log("person[] - AFTER .push()");
+person.push("Joker", "Harley Quinn");
+console.log(person);
+console.log(person.length);
+
+console.log("friends[] - BEFOR .push()");
+console.log(friends);
+console.log(friends.length);
+console.log("friends[] - AFTER .push()");
+friends.push("Marzio", "Freddy");
+console.log(friends);
+console.log(friends.length);
+
+console.log("favFood[] - BEFOR .push()");
+console.log(favFood);
+console.log(favFood.length);
+console.log("favFood[] - AFTER .push()");
+favFood.push("Pizza", "Currywurst");
+console.log(favFood);
+console.log(favFood.length);
+
+//lvl_1_5: Arrays pop()
+// !!!The pop() method removes (pops) the last element of an array, 
+//    changes the original array 
+//    and returns the removed element!!!
+console.log("person[] - BEFOR .pop()");
+console.log(person);
+console.log("person[] - AFTER pop");
+let lastPerson = person.pop();
+console.log(person);
+console.log("lastPerson = " + lastPerson);
+
+console.log("friends[] - BEFOR .pop()");
+console.log(friends);
+console.log("friends[] - AFTER .pop()");
+let lastFriend = friends.pop();
+console.log(friends);
+console.log("lastFriend = " + lastFriend);
+
+console.log("favFood[] - BEFOR .pop()");
+console.log(favFood);
+console.log("favFood[] - AFTER .pop()");
+let lastFavFood = favFood.pop();
+console.log(favFood);
+console.log("lastFood = " + lastFavFood);
+
+//lvl_1_6: Arrays shift()
+// !!!The shift() method removes the first item of an array, 
+//    changes the original array 
+//    and returns the shifted element!!!
+console.log("person[] - BEFOR .shift()");
+console.log(person);
+console.log("person[] - AFTER .shift()");
+let firstPerson = person.shift();
+console.log(person);
+console.log("firstPerson = " + firstPerson);
+
+console.log("friends[] - BEFOR .shift()");
+console.log(friends);
+console.log("friends[] - AFTER .shift()");
+let firstFriend = friends.shift();
+console.log(friends);
+console.log("firstFriend = " + firstFriend);
+
+console.log("favFood[] - BEFOR .shift()");
+console.log(favFood);
+console.log("favFood[] - AFTER .shift()");
+let firstFavFood = favFood.shift();
+console.log(favFood);
+console.log("firstFavFood = " + firstFavFood);
+
+//lvl_1_7: Arrays unshift()
+// !!!The unshift() method adds new elements to the beginning of an array, 
+//    and overwrites the original array!!!
+console.log("person[] - BEFOR .unshift()");
+console.log(person);
+console.log("person[] - AFTER .unshift()");
+person.unshift("Farid")
+console.log(person);
+
+console.log("friends[] - BEFOR .unshift()");
+console.log(friends);
+console.log("person[] - AFTER .unshift()");
+friends.unshift("Julia", "Lea")
+console.log(friends);
+
+console.log("favFood[] - BEFOR .unshift()");
+console.log(favFood);
+favFood.unshift("Leberkäse", "Spinat")
+console.log(favFood);
+
+//lvl_1_9: Arrays slice()
+// !!!The slice() method returns selected elements in an array, as a new array,
+//    selects from a given start, up to a (not inclusive) given end
+//    and does not change the original array!!!
+let land = ["Schweden", "Polen", "Italien", "Norwegen", "Griechenland"]
+console.log("land[] - BEFOR .slice()");
+console.log(land);
+console.log(land.slice(1, 3));
+console.log("land[] - AFTER .slice()");
+console.log(land);
+
+//lvl_1_10: Arrays split()
+// !!!The split() method splits a string into an array of substrings,
+//    returns a new array
+//    and does not change the original array.
+//    If (" ") is used as separator, the string is split between words!!!
+const text = "It's okay, Bender. I like cooking too. Oh, you're a dollar naughtier than most. My fellow Earthicans, as I have explained in my book 'Earth in the Balance', and the much more popular 'Harry Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards."
+let split1 = text.split(",")
+console.log(split1);
+let split2 = text.split(" ")
+console.log(split2);
+let split3 = text.split("")
+console.log(split3);
