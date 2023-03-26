@@ -10,7 +10,7 @@
 
 /* lev2_5: Switch Break */
 .style {
-    margin: auto;
+    /* margin: auto; */
     width: 220px;
     padding: 20px;
     background-color: silver;
@@ -43,7 +43,7 @@ input {
     background-color: var(--dhl-yellow);
     height: 9em;
     width: 25em;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .boxMasse {
@@ -81,4 +81,7 @@ input {
     outline: 0;
     border-color: var(--dhl-red);
     ;
+}
+form{
+    /* text-align: center; */
 }
